@@ -1,0 +1,67 @@
+@import 'variables';
+@import 'common';
+@import 'header';
+@import 'sidebar';
+@import 'content';
+@import 'search';
+@import 'tables';
+@import 'forms';
+
+body {
+  color: black;
+  background-color: white;
+}
+
+.mkdc-main {
+  .app-header {
+    color: white;
+    background-color: #13213E;
+    height: auto;
+    padding: 0;
+    line-height: 1.4;
+
+    &__inner {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__left {
+      display: flex;
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+    }
+  }
+
+  .app-sidebar {
+    color: white;
+    background-color: #1F325C;
+  }
+
+  .ant-page-header {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .ant-btn-primary {
+    box-shadow: none;
+  }
+
+  .ant-steps {
+    .ant-steps-item-description {
+      opacity: .8;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+  }
+
+  &__steps {
+    max-width: 800px;
+    margin: 16px auto;
+  }
+}

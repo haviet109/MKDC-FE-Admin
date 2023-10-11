@@ -1,0 +1,65 @@
+.app-data {
+  &__header {
+    margin-bottom: 16px;
+
+    .anticon-minus-circle {
+      color: $color-error;
+    }
+
+    .anticon-check-circle {
+      color: $color-success;
+    }
+  }
+
+  .ant-table-wrapper {
+    .ant-table-thead {
+      > tr {
+        > th {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .ant-table-tbody {
+      > tr {
+        > td {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+
+      .ant-tag {
+        min-width: 90px;
+      }
+    }
+  }
+
+  .btn-table-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+
+    svg {
+      display: block;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .table-operation {
+    .ant-table-tbody {
+      > tr {
+        > td {
+          &:last-child {
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

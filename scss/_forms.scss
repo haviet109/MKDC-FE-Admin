@@ -1,0 +1,63 @@
+.color-require {
+  color: $color-error;
+}
+
+.card-images {
+  .ant-card {
+    margin-top: 16px;
+
+    .ant-card-head {
+      min-height: inherit;
+      padding: 5px 16px;
+    }
+
+    .ant-card-head-title {
+      font-size: 14px;
+    }
+
+    .ant-card-extra {
+      .ant-btn {
+        min-width: 140px;
+      }
+    }
+  }
+}
+
+.mkdc-form {
+  &__content {
+    .ant-divider {
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    margin: 0 0 6px;
+  }
+
+  .ant-picker {
+    width: 100%;
+  }
+
+  .ant-col-24 {
+    &.ant-form-item-label {
+      padding-bottom: 0;
+
+      > label {
+        display: flex;
+        height: auto;
+        margin: 0 0 6px;
+      }
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+}
+
+.mkdc-step {
+  margin-top: 16px;
+}

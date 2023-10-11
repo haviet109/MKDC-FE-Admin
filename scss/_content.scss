@@ -1,0 +1,46 @@
+.app-content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  height: calc(100vh - var(--content-header-height, 52px) - var(--header-height, 48px));
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &__header {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  &__main {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__card {
+    min-height: 100%;
+  }
+}
+
+.new-panel {
+  height: 100%;
+
+  > .ant-col {
+    height: 100%;
+  }
+
+  &__card {
+    height: 100%;
+
+    > .ant-card-body {
+      padding: 0;
+      height: calc(100% - 56px);
+    }
+  }
+
+  &__content {
+    padding: 16px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}

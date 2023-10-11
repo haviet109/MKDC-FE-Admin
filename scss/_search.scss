@@ -1,0 +1,59 @@
+.advanced-search {
+  padding: 16px 0 5px;
+
+  .ant-collapse {
+    > .ant-collapse-item {
+      > .ant-collapse-header {
+        position: relative;
+        padding: 0;
+        justify-content: flex-start;
+
+        &::after {
+          content: '';
+          pointer-events: none;
+          position: absolute;
+          top: 12px;
+          left: 0;
+          right: 0;
+          width: 100%;
+          border-top: 1px solid $border-color;
+        }
+
+        > .ant-collapse-expand-icon {
+          position: relative;
+          z-index: 1;
+          background-color: $white;
+        }
+
+        > .ant-collapse-header-text {
+          position: relative;
+          z-index: 1;
+          padding-right: 10px;
+          flex: none;
+          background-color: $white;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .ant-collapse-content {
+      > .ant-collapse-content-box {
+        padding: 16px 0 0;
+      }
+    }
+  }
+
+  .ant-form-item {
+    .ant-form-item-label {
+      > label {
+        margin-top: 4px;
+        height: inherit;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .ant-picker-range {
+    display: flex;
+  }
+}
